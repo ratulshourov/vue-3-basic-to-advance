@@ -13,7 +13,15 @@
     <h1 v-bind:id="idname">Heading</h1>
     <h1 v-bind:class="disableButton && 'notActive'">Active Class</h1>
     <h1 v-bind:class="flag ? 'active':'notActive'">Flag Check</h1>
-    
+    <!--inline css example object and array -->
+
+    <h2 v-bind:style="{
+      background:'red',
+      fontSize:'100px',
+    }">inline css example  using object</h2>
+
+    <!---->
+
   </div>
  
 </template>
