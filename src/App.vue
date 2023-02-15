@@ -1,6 +1,7 @@
 <template>
   <div>
-    <img alt="Vue logo" src="./assets/logo.png">
+    <app-logic></app-logic>
+  
     {{name}}
     <h1 v-text="phone"></h1>
     <div v-html="title"></div>
@@ -21,18 +22,18 @@
     }">inline css example  using object</h2>
 
     <!---->
-
+<!---->
   </div>
  
 </template>
 
 <script>
-
+import LogicComponent from './components/LogicComponent'
 
 export default {
   name: 'App',
   components: {
-    
+    'app-logic':LogicComponent
   },
   data() {
     return {
@@ -54,7 +55,7 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+ 
   color: #2c3e50;
   margin-top: 60px;
 }
